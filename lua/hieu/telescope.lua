@@ -25,6 +25,11 @@ local open_in_nvim_tree = function(prompt_bufnr)
 end
 
 telescope.setup{
+    pickers = {
+        find_files = {
+            hidden = true
+        }
+    },
     defaults = {
         mappings = {
             i = {

@@ -52,11 +52,14 @@ vim.opt.termguicolors = true
 
 -- OR setup with some options
 require("nvim-tree").setup({
+  update_focused_file = {
+	  enable = true
+  },
   sort_by = "case_sensitive",
   renderer = {
     group_empty = true,
   },
   filters = {
-    dotfiles = true,
+    dotfiles = false,
   },
 })
